@@ -109,7 +109,7 @@
 #endif
 
 #ifndef DEFAULT_AP_DONT_FORCE_SETUP                       
-#define DEFAULT_AP_DONT_FORCE_SETUP      false // Allow optional usage of Sensor without WIFI avaiable  // When set you can use the Sensor in AP-Mode without beeing forced to /setup                                                 
+#define DEFAULT_AP_DONT_FORCE_SETUP      true // 允许无WiFi连接。Allow optional usage of Sensor without WIFI avaiable  // When set you can use the Sensor in AP-Mode without beeing forced to /setup                                                 
 #endif
 
 #ifndef DEFAULT_DONT_ALLOW_START_AP
@@ -173,10 +173,10 @@
 #endif
 
 #ifndef DEFAULT_PIN_I2C_SDA
-#define DEFAULT_PIN_I2C_SDA              4
+#define DEFAULT_PIN_I2C_SDA              (-1)
 #endif
 #ifndef DEFAULT_PIN_I2C_SCL
-#define DEFAULT_PIN_I2C_SCL              5
+#define DEFAULT_PIN_I2C_SCL              (-1)
 #endif
 #ifndef DEFAULT_I2C_CLOCK_SPEED
 #define DEFAULT_I2C_CLOCK_SPEED          400000            // Use 100 kHz if working with old I2C chips

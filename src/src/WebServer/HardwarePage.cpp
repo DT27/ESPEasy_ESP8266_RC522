@@ -188,9 +188,9 @@ void handle_hardware() {
   }
   #else //for ESP8266 we keep the existing UI
   addFormCheckBox(F("Init SPI"), F("initspi"), Settings.InitSPI > static_cast<int>(SPI_Options_e::None));
-  addFormNote(F("CLK=GPIO-14 (D5), MISO=GPIO-12 (D6), MOSI=GPIO-13 (D7)"));
+  addFormNote(F("SCK(CLK)=GPIO-14 (D5), MISO=GPIO-12 (D6), MOSI=GPIO-13 (D7)"));
   #endif
-  addFormNote(F("Chip Select (CS) config must be done in the plugin"));
+  addFormNote(F("设备的 SDA(CS) PIN 必须配置好。"));
   
 #if FEATURE_SD
   addFormSubHeader(F("SD Card"));

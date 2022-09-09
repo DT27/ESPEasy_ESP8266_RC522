@@ -13,7 +13,7 @@
 
 //we disable SPI if not defined
 #ifndef DEFAULT_SPI
- #define DEFAULT_SPI 0
+ #define DEFAULT_SPI 1  // 默认启用SPI
 #endif
 
 
@@ -256,7 +256,7 @@ class SettingsStruct_tmpl
   boolean       CustomCSS = false;
   boolean       DST = false;
   uint8_t       WDI2CAddress = 0;
-  boolean       UseRules = false;
+  boolean       UseRules = true;
   boolean       UseSerial = false;
   boolean       UseSSDP = false;
   uint8_t       ExternalTimeSource = 0;

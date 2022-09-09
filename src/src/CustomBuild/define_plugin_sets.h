@@ -1258,13 +1258,7 @@ To create/register a plugin, you have to :
 #endif
 
 #ifdef PLUGIN_SET_COLLECTION_C
-    #define USES_P085   // AcuDC24x
-    #define USES_P087   // Serial Proxy
-
-    #define USES_P091	// SerSwitch
-    #define USES_P092   // DL-Bus
-
-    #define USES_P111   // RC522 RFID reader
+    #define USES_P111   // 仅保留一个 RC522 RFID reader
 #endif
 
 #ifdef PLUGIN_SET_COLLECTION_D

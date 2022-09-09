@@ -1037,7 +1037,7 @@ void devicePage_show_pin_config(taskIndex_t taskIndex, deviceIndex_t DeviceIndex
        || (Device[DeviceIndex].Type == DEVICE_TYPE_SPI2)
        || (Device[DeviceIndex].Type == DEVICE_TYPE_SPI3))
       && (Settings.InitSPI == static_cast<int>(SPI_Options_e::None))) {
-    addFormNote(F("SPI Interface is not configured yet (Hardware page)."));
+    addFormNote(F("SPI未启用（请到Hardware页面内，勾选Init SPI）。"));
   }
 
   if ((Device[DeviceIndex].Type == DEVICE_TYPE_I2C)

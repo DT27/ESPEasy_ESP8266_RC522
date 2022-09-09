@@ -161,8 +161,8 @@
 
 // Deployment SSID will be used only when the configured SSIDs are not reachable and/or no credentials are set.
 // This to make deployment of large number of nodes easier
-#define CUSTOM_DEPLOYMENT_SSID                  ""                // Enter SSID not shown in UI, to be used on custom builds to ease deployment
-#define CUSTOM_DEPLOYMENT_KEY                   ""                // Enter key not shown in UI, to be used on custom builds to ease deployment
+#define CUSTOM_DEPLOYMENT_SSID                  "NFC-Node-20220909190146"                // Enter SSID not shown in UI, to be used on custom builds to ease deployment
+#define CUSTOM_DEPLOYMENT_KEY                   "confignfc"                // Enter key not shown in UI, to be used on custom builds to ease deployment
 #define CUSTOM_SUPPORT_SSID                     ""                // Enter SSID not shown in UI, to be used on custom builds to ease support
 #define CUSTOM_SUPPORT_KEY                      ""                // Enter key not shown in UI, to be used on custom builds to ease support
 
